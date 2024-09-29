@@ -85,7 +85,6 @@
     width: 65px;
     border-radius: 50%;
     background-color: #000000; 
-    align-item: center;
     bottom: 70%;
     left: 50%;
     z-index: 2;
@@ -125,14 +124,13 @@
   html,body {
     background-color: #212121;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+
   }
   
   .pulse {
     height: 100px;
     width: 200px;
-    overflow: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -141,6 +139,7 @@
     margin: auto;
   }
   .pulse:after {
+    left: 50px;
     content: "";
     display: block;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200px 100px"><polyline fill="none" stroke-width="3px" stroke="white" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>') 0 0 no-repeat;
